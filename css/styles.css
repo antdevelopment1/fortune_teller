@@ -5,20 +5,36 @@ html, body {
     width: 100%;
 }
 body {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: teal;
-    justify-content: space-around;
-    outline: 1px solid yellow;
-    height: 100%;
+    background-color:rgba(0,128,128, .7);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: space-evenly;
+    /* outline: 1px solid yellow; */
+    color: rgba(255, 255, 255, .9);
+    text-align: center;
 }
 /* body > * {
     outline: 1px solid fuchsia;
 } */
 .buttonContainer {
     text-align: center;
+    /* outline: 1px solid white; */
 }
 .quoteDisplay {
     height: 30px;
     font-size: 20px;
+    /* outline: 1px solid white; */
+}
+.imageContainer {
+    /* outline: 1px solid yellow; */
+    text-align: center;
+}
+.image {
+    width: 40%;
+    height: 20%;
 }
