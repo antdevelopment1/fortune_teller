@@ -1,0 +1,24 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: teal;
+    justify-content: space-around;
+    outline: 1px solid yellow;
+    height: 100%;
+}
+/* body > * {
+    outline: 1px solid fuchsia;
+} */
+.buttonContainer {
+    text-align: center;
+}
+.quoteDisplay {
+    height: 30px;
+    font-size: 20px;
+}
