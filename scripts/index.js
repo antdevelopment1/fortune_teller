@@ -13,14 +13,18 @@ const IMAGES = [
     "/images/pexels-photo-236047.jpeg"
 ];
 
-const thumbnailContainer = document.querySelector("[data-thumbnail]");
+const thumbnailContainer = document.querySelector('[data-thumbnail]');
+const bigger = document.querySelector('[data-biggerImage]');
+
 
 function createImage(imageURL) {
     const theImage = document.createElement('img');
     theImage.setAttribute('src', imageURL);
     theImage.addEventListener('click', function(event) {
         console.log('Hello');
-        console.log(event.target.src);
+        console.log("this is the original image src" + bigger.src);
+        console.log("this is the image i want to replace the original image with" + event.target.src);
+        bigger.src = event.target.src
     })
 
     console.log('Image created');
@@ -49,9 +53,18 @@ IMAGES.forEach(function(photo) {
     let testThumb = createThumbnail(photo);
     thumbnailContainer.appendChild(testThumb);
     console.log('All done!!!');
+
+    // Targets each div/image every time the user clicks. Alternative to select target an element without data attribute
+    // testThumb.addEventListener('click', function() {
+    //     console.log('clicked');
+    // })
     // index++;
 
 })
+
+// use addEventListener for the 'click' event on each image
+
+
 
 
 

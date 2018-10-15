@@ -26,6 +26,11 @@ img {
     margin: 10px;
     outline: 1px solid fuchsia;
 }
+.bigImage {
+    width: 500px;
+    height: 500px;
+    outline: 1px solid blue;
+}
 /* body > * {
     outline: 1px solid fuchsia;
 } */
